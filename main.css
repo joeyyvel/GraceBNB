@@ -57,7 +57,7 @@ a{
         font-size: 15px;
         border-radius: 40px;
         box-shadow: 0pt 1.5pt 0.5pt rgb(214, 202, 202);
-        
+        padding-right: 30px;
     }
    
     #searchTwo{
@@ -104,7 +104,8 @@ a{
     body{
         background-color: rgb(31, 226, 41);
     }
-    .header{
+    .secondSearchBox{
+        display: none;
       
     }
     .searchBox{       
