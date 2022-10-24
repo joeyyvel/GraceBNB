@@ -32,8 +32,7 @@ a{
      /*--------------------950px header------------------*/
     .secondSearchBox{                
         display: flex;
-        background-color: antiquewhite;
-        display: flex;
+        background-color: antiquewhite;       
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -154,6 +153,8 @@ a{
     .pageIcon-links{
         padding-top: 20px;
         font-size: 25px;
+        width: 100%;
+        display: inline-flex;
     }
    
     
