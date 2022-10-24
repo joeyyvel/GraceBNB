@@ -32,7 +32,7 @@ a{
      /*--------------------950px header------------------*/
     .secondSearchBox{                
         display: flex;
-        background-color: antiquewhite;       
+        background-color: rgb(243, 241, 245);       
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -59,6 +59,7 @@ a{
         border-radius: 40px;
         box-shadow: 0pt 1.5pt 0.5pt rgb(214, 202, 202);
         padding-right: 30px;
+        cursor: pointer;
     }
    
     #searchTwo{
@@ -106,7 +107,17 @@ a{
     .pageIcon-links{
         padding-top: 100px;
         font-size: 25px;
+        padding-left: 20px;
+        display: inline-flex;
     }
+    .pageIcon-links > a{
+        margin-right: 25px;
+    }
+    .pageIcon-links > a:hover{
+        cursor: pointer;
+        color: black;
+    }
+
     
 
 }
@@ -138,7 +149,7 @@ a{
         display: inline-block;
         justify-content: left;
         text-align: left;      
-        position: fixed;
+        position: absolute;
         margin-left: 30px;
        
     }
@@ -152,11 +163,19 @@ a{
     }
     .pageIcon-links{
         padding-top: 20px;
+        padding-left: 20px;
         font-size: 25px;
         width: 100%;
         display: inline-flex;
     }
-   
+    .pageIcon-links > a{
+        margin-right: 30px;
+    }
+    .pageIcon-links > a:hover{
+        color: black;
+        cursor: pointer;
+    }
+
     
     
 }
