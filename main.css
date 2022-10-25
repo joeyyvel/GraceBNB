@@ -1,19 +1,14 @@
 *{
     box-sizing: 0;
     padding: 0;
+    
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    
+    margin: 0;
 }
 
-.destinations{  
-    width: 100%;
-    display: flex;  
-    text-align: center;
-    color: gray;
-    
-}
+
 a{
     text-decoration: none;
     font-size: 13px;
@@ -125,7 +120,7 @@ a{
 
 @media screen and (max-width: 750px) {
     body{
-        background-color: rgb(31, 226, 41);
+        background-color: white;
     }
     .secondSearchBox{
         display: none;
@@ -134,13 +129,14 @@ a{
     .searchBox{       
         border: 1px solid gray;
         border-radius: 30px;
-        height: 60px;
+        height: 55px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         background-color: aliceblue;
         justify-content: space-between;
+        margin: 15px 25px;
         padding-left: 30px;
         padding-right: 30px;      
         box-shadow: 1px 5px 1px solid gray;
@@ -179,7 +175,7 @@ a{
         cursor: pointer;
     }
     #lineOne{
-        color: blue;
+       opacity: 0.3;
         
       
 
