@@ -163,17 +163,32 @@ a{
     }
     .pageIcon-links{
         padding-top: 20px;
-        padding-left: 20px;
+        padding-left: 15px;
         font-size: 25px;
         width: 100%;
-        display: inline-flex;
+        display: inline-flex;       
     }
     .pageIcon-links > a{
         margin-right: 30px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+       
     }
     .pageIcon-links > a:hover{
         color: black;
         cursor: pointer;
+    }
+    #lineOne{
+        color: blue;
+        
+      
+
+    }
+
+    .photoSectionOne{
+        display: flex;
+        margin-top: 20px;
+        
     }
 
     
