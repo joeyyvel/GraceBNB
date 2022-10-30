@@ -56,14 +56,13 @@ a:hover{
     padding-top: 20px;
 }
 
+@media screen and (max-width: 1600px) {
 
-@media screen and (max-width: 950px) {
-    
     body{
-        background-color: rgb(20, 177, 80);
-        
+        background-color: midnightblue;
     }
-     /*--------------------950px header------------------*/
+
+    
     .secondSearchBox{                
         display: flex;
         background-color: rgb(243, 241, 245);       
@@ -77,34 +76,42 @@ a:hover{
 
     /*----------------------airbnb logo-----------------*/
     #airSize{
-        font-size: 37px;
+        font-size: 35px;
         color: rgb(231, 104, 104);
+        margin-left: 23px;
+       
     }
     /*--------------------triple search box-------------*/
     .tripleSearchBox{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         text-align: center;
         border: 1px solid rgba(175, 173, 173, 0.5);
-        height: 48px;
+        height: 46px;
         width: 340px;    
         font-size: 15px;
         border-radius: 40px;
         box-shadow: 0.1pt 1.5pt 0.1pt rgba(233, 224, 224, 0.5);
-        padding-right: 30px;
+        padding-left: 15px;
         cursor: pointer;
+        margin-left: 140px;
     }
    
-    #searchTwo{
-        font-size: 13px;       
-        border-radius: 50%;
-        padding: 9px;
-        background-color: rgb(252, 88, 88);
-        margin-left: 15px;
+    #searchIcon{
+        font-size: 13px;
         color: white;
-        position: absolute;
-        margin-left: 80px;          
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: red;    
+        margin-right: -15px;
+        margin-left: 15px;
+        top: 2px;
     }
     .searchBox{
         display: none;
@@ -137,6 +144,7 @@ a:hover{
         width: 63px;
         height: 30px;
         padding: 5px;
+        
     }
     .pageIcon-links{
         padding-top: 100px;
@@ -155,7 +163,7 @@ a:hover{
         background-color: rgb(52, 150, 231);
         width: 100%;
         height: 293px;
-        padding-bottom: 2000px;
+      
     }
     .photoSectionOne > div > img{
         border-radius: 5px;        
@@ -167,15 +175,397 @@ a:hover{
         display: none;
     }
 
+    /*-----------------------------three photo display on screen*----------------*/
+
+   .photoSectionOne{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #r1c1{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    #r2c1{
+        display: flex;
+        width: 100%;
+        height: 100%;
+       
+
+    }
+    #r3c1{
+       display: none;
+    }
+
+    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne{
+       width: 95%;
+       height: auto;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 8px;
+        
+    }
+    #rowFourColumnOne{
+        display: none;
+    }
+    
+
+    
+    
+}
+    
+
+@media screen and (max-width: 1130px) {
+
+    body{
+        background-color:deeppink ;
+    }
+
+    
+    .secondSearchBox{                
+        display: flex;
+        background-color: rgb(243, 241, 245);       
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        margin-bottom: 40px;       
+    
+    }
+
+    /*----------------------airbnb logo-----------------*/
+    #airSize{
+        font-size: 33px;
+        color: rgb(231, 104, 104);
+        margin-left: 1px;
+       
+    }
+    /*--------------------triple search box-------------*/
+    .tripleSearchBox{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        border: 1px solid rgba(175, 173, 173, 0.5);
+        height: 46px;
+        width: 340px;    
+        font-size: 15px;
+        border-radius: 40px;
+        box-shadow: 0.1pt 1.5pt 0.1pt rgba(233, 224, 224, 0.5);
+        padding-left: 15px;
+        cursor: pointer;
+        margin-left: 140px;
+    }
    
+    #searchIcon{
+        font-size: 13px;
+        color: white;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: red;    
+        margin-right: -15px;
+        margin-left: 15px;
+        top: 2px;
+    }
+    .searchBox{
+        display: none;
+    }
+    /*-------------------second search box----------------*/
+    .secondSearchBox{       
+        height: 80px;        
+        border-bottom: 1px solid rgb(206, 199, 199);
+        margin-left: -8px;
+        margin-top: -8px;         
+        display: flex;   
+        width: 100%;
+        position:absolute;     
+        
+        
+    }
+    /*-------------------right box login---------------------*/
+    .doubleSearchBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    /*--------------------Burger Menu ellipse-------------------*/
+    .burgerMenu{
+        border: 0.5pt solid gray;       
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        width: 63px;
+        height: 30px;
+        padding: 5px;
+        
+    }
+    .pageIcon-links{
+        padding-top: 100px;
+        font-size: 25px;
+        padding-left: 20px;
+        display: inline-flex;
+    }
+    .pageIcon-links > a{
+        margin-right: 25px;
+    }
+    .pageIcon-links > a:hover{
+        cursor: pointer;
+        color: black;
+    }
+    .photo-container{
+        background-color: rgb(52, 150, 231);
+        width: 100%;
+        height: 293px;
+      
+    }
+    .photoSectionOne > div > img{
+        border-radius: 5px;        
+    }
+    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne {
+        border-radius: 13px;
+    }
+    #rowFourColumnOne{
+        display: none;
+    }
+
+    /*-----------------------------three photo display on screen*----------------*/
+
+   .photoSectionOne{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #r1c1{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    #r2c1{
+        display: flex;
+        width: 100%;
+        height: 100%;
+       
+
+    }
+    #r3c1{
+       display: none;
+    }
+
+    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne{
+       width: 95%;
+       height: auto;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 8px;
+        
+    }
+    #rowFourColumnOne{
+        display: none;
+    }
+    
+
+    
+    
+}
+
+
+
+@media screen and (max-width: 950px) {
+   
+    
+    body{
+        background-color: rgb(221, 108, 15);
+        
+        
+    }
+     /*--------------------950px header------------------*/
+    .secondSearchBox{                
+        display: flex;
+        background-color: rgb(113, 33, 192);       
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+        
+       
+       
+    }
+
+    /*----------------------airbnb logo-----------------*/
+    #airSize{
+        font-size: 35px;
+        color: rgb(245, 81, 81);
+        margin-left: -1px;
+       
+    }
+    /*--------------------triple search box-------------*/
+    .tripleSearchBox{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        border: 1px solid rgba(175, 173, 173, 0.5);
+        height: 46px;
+        width: auto;    
+        font-size: 15px;
+        border-radius: 40px;
+        box-shadow: 0.1pt 1.5pt 0.1pt rgba(233, 224, 224, 0.5);
+        padding-left: 15px;
+        cursor: pointer;
+        margin-left: -32px;
+    }
+   
+    #searchIcon{
+        font-size: 13px;
+        color: white;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: red;    
+        margin-right: .1px;
+        margin-left: 15px;
+        top: 2px;
+    }
+    .searchBox{
+        display: none;
+    }
+    .becomeAhost{
+        margin-left: -30px;
+    }
+    .globe{
+        margin-left: -5px;
+    }
+
+
+    /*-------------------second search box----------------*/
+    .secondSearchBox{       
+        height: 77px;        
+        border-bottom: 1px solid rgb(206, 199, 199);       
+        margin-top: -8px;         
+        display: flex;   
+        width: 100%;
+        position:absolute;     
+        
+        
+    }
+    /*-------------------right box login---------------------*/
+    .doubleSearchBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    /*--------------------Burger Menu ellipse-------------------*/
+    .burgerMenu{
+        border: 0.5pt solid gray;       
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        width: 63px;
+        height: 30px;
+        padding: 5px;
+        margin-left: 20px;
+        
+    }
+    .pageIcon-links{
+        padding-top: 100px;
+        font-size: 25px;
+        padding-left: 20px;
+        display: inline-flex;
+    }
+    .pageIcon-links > a{
+        margin-right: 25px;
+    }
+    .pageIcon-links > a:hover{
+        cursor: pointer;
+        color: black;
+    }
+    .photo-container{
+        background-color: rgb(52, 150, 231);
+        width: 100%;
+        height: 293px;
+      
+    }
+    .photoSectionOne > div > img{
+        border-radius: 5px;        
+    }
+    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne {
+        border-radius: 13px;
+    }
+    #rowFourColumnOne{
+        display: none;
+    }
+
+    /*-----------------------------three photo display on screen*----------------*/
+
+   .photoSectionOne{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #r1c1{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    #r2c1{
+        display: flex;
+        width: 100%;
+        height: 100%;
+       
+
+    }
+    #r3c1{
+       display: none;
+    }
+
+    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne{
+       width: 95%;
+       height: auto;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 8px;
+        
+    }
+    #rowFourColumnOne{
+        display: none;
+    }
+    
+
     
     
 
 }
 
 @media screen and (max-width: 750px) {
+   
     body{
-        background-color: white;
+        background-color: green;
+
     }
     .secondSearchBox{
         display: none;
@@ -230,17 +620,47 @@ a:hover{
         color: black;
         cursor: pointer;
     }
-   
+
     .photoSectionOne{
         display: flex;
-        width: 100%;       
-        background-color: orangered;   
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #r1c1{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    #r2c1{
+        display: flex;
+        width: 100%;
+        height: 100%;
+       
 
     }
-    .photoSectionOne > div{
-        margin-left: 20px;
-       
-    }   
+    #r3c1{
+        display: none;
+    }
+    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne{
+       width: 95%;
+       height: auto;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 8px;
+        
+    }
+     #rowFourColumnOne{
+        display: none;
+    }
+    
+
+   
+   
+  
     
 }
 
@@ -249,32 +669,70 @@ a:hover{
     body{
         background-color: blueviolet;
     }
-    #rowOneColumnOne, #rowTwoColumnOne{
-        border-radius: 13px;
-        height: auto;
+    .photoSectionOne{
+      
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+           
+    }
+    #r1c1{
+        width: 100%;
+        height: 100%;
+       
+      
+    }
+    #r2c1{
+        width: 100%;
+        height: 100%;
+       
+    }
+    #r3c1{
+        display: none;
+    } 
+
+    #rowOneColumnOne, #rowTwoColumnOne{       
+       display: flex;
+       width: 100%;
+       
     }
     #rowThreeColumnOne, #rowFourColumnOne{
         display: none;
     }
+   
     
 }
 
 @media screen and (max-width: 500px) {
 
-    body{
-       background-color:white;
-    }
-    #rowOneColumnOne {
-        height: 370px;
-        border-radius: 13px;
-    }
-    #rowTwoColumnOne, #rowThreeColumnOne, #rowFourColumnOne {
-        display: none;
-        
-    }
-    .photo-container{
-        padding-bottom: 2000px;
-    }
+   body{
+    background-color: rgb(110, 9, 9);
+   }
+    #rowTwoColumnOne, #rowThreeColumnOne, #rowFourColumnOne{
+    display: none;
+   }
+   .photoSectionOne{
+    margin-top: 15px;
+    width: 100%;      
+    display: block;
+   
+   }
+   #r1c1{
+    width: 100%;
+   }
+   #rowOneColumnOne{
+    height: auto;
+   }
+
+   .footer{
+    
+    width: 100%;
+    height: 250px;
+    border: 3px solid black;
+    background-color: chartreuse;
+    margin-top: 50px;
+   }
    
     
 }
