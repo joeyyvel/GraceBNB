@@ -69,17 +69,17 @@ a:hover{
 .photo-container{
     padding-top: 20px;
 }
+
 html{
     overflow-x: hidden;
 }
 
+
 @media screen and (max-width: 1600px) {
 
     body{
-        background-color: midnightblue;
-    }
-
-    
+        background-color: rgb(41, 29, 202);
+    }    
     .secondSearchBox{                
         display: flex;
         background-color: white;       
@@ -97,6 +97,7 @@ html{
     }
    
     }
+
     /*--------------------triple search box-------------*/
     .tripleSearchBox{
         display: flex;
@@ -152,69 +153,71 @@ html{
         padding: 5px;
         
     }
+    
     .pageIcon-links{
         top: -8px;
         font-size: 25px;
         padding-left: 20px;
         display: inline-flex;
     }
+    
     .pageIcon-links > a{
         margin-right: 25px;
     }
+
     .pageIcon-links > a:hover{
         cursor: pointer;
         color: black;
     }
-    
-    .photoSectionOne > div > img{
-       height: 100%;
-       width: auto;
-    }
-    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne {
-        border-radius: 13px;
-    }
-    #rowFourColumnOne{
-        display: none;
-    }
-
-    /*-----------------------------three photo display on screen*----------------*/
-
-   .photoSectionOne{
+    .main-container{        
         display: flex;
         width: 100%;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-    }
-    .r1c1{
-        display: flex;
-        width: 100%;
-        height: auto;
         
     }
-
-    .r2c1{
-        display: flex;
-        width: 100%;
-        height: auto;
+    .main-container > div{       
        
-
+        padding: 10px 20px;        
+        width: 100%;
+        max-height: 250px;
     }
-    .r3c1{
-       display: none;
+    .divOne{
+      flex: 1;
+      border: 5px solid red;
     }
-
-    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne{
-       width: 95%;
-       height: auto;
-       margin-left: auto;
-       margin-right: auto;
-       padding: 8px;
-        
+    .divTwo{
+      flex: 1;
+      border: 5px solid red;
     }
-    #rowFourColumnOne{
-        display: none;
+    .divThree{
+      flex: 1;
+      border: 5px solid red;
     }
+    .divFour{
+      flex: 1;
+      border: 5px solid red;
+    }
+    #picOne{
+     width: 100%;
+     height: 100%;
+     border-radius: 15px;     
+    }
+    #picTwo{
+     width: 100%;
+     height: 100%;
+     border-radius: 15px;
+    }
+    #picThree{
+     width: 100%;
+     height: 100%;
+     border-radius: 15px;
+    }
+    #picFour{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    }
+    
+    
     
 @media screen and (max-width: 1130px) {
 
@@ -303,77 +306,34 @@ html{
         cursor: pointer;
         color: black;
     }
-    .photo-container{
-        background-color: rgb(52, 150, 231);
-        width: 100%;
-        height: 293px;
-      
-    }
-    .photoSectionOne > div > img{
-        border-radius: 5px;        
-    }
-    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne {
-        border-radius: 13px;
-    }
-    #rowFourColumnOne{
-        display: none;
-    }
-
-    /*-----------------------------three photo display on screen*----------------*/
-
-   .photoSectionOne{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .r1c1{
-        display: flex;
-        width: 100%;
-        height: 100%;
+    .photoSectionOne{
         
     }
-
-    .r2c1{
-        display: flex;
-        width: 100%;
-        height: 100%;
+    .photoSectionOne > div{
+        height: 300px;
        
-
     }
-    .r3c1{
-       display: none;
+    #picOne, #picTwo, #picThree{
+        max-width: 100%;
+        max-height: 100%;
     }
-
-    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne{
-       width: 95%;
-       height: auto;
-       margin-left: auto;
-       margin-right: auto;
-       padding: 8px;
-        
-    }
-    #rowFourColumnOne{
+    #picFour{
         display: none;
     }
-    
+    .divFour{
+        display: none;
+    }
 
-    
-    
+        
 }
 
-
-
-@media screen and (max-width: 950px) {
-   
+@media screen and (max-width: 950px) {  
     
     body{
         
         background-color: rgb(221, 108, 15);
         
-    }  
-      
+    }       
 
     .tripleSearchBox{
         display: flex;
@@ -459,64 +419,32 @@ html{
         cursor: pointer;
         color: black;
     }
-    .photo-container{
-        background-color: rgb(52, 150, 231);
-        width: 100%;
-        height: 293px;
+    .photoSectionOne{
       
+        display: flex;
     }
-    .photoSectionOne > div > img{
-        border-radius: 5px;        
+    .photoSectionOne > div{
+     
+        margin: 5px;
+        width: 100%;
+        height: auto;
     }
-    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne {
-        border-radius: 13px;
+    #picOne, #picTwo{
+        max-width: 100%;
+        max-height: 100%;
     }
-    #rowFourColumnOne{
+    .divFour{
         display: none;
     }
-
-    /*-----------------------------three photo display on screen*----------------*/
-
-   .photoSectionOne{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .r1c1{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        
-    }
-
-    .r2c1{
-        display: flex;
-        width: 100%;
-        height: 100%;
-       
-
-    }
-    .r3c1{
-       display: none;
-    }
-
-    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne{
-       width: 95%;
-       height: auto;
-       margin-left: auto;
-       margin-right: auto;
-       padding: 8px;
-        
-    }
-    #rowFourColumnOne{
+    .divThree{
         display: none;
     }
     
+
+
+
 }
 
-/*--------------------------------------------max-width 750px--------------------------------------*/
 @media screen and (max-width: 750px) {
    
     body{
@@ -576,111 +504,71 @@ html{
         color: black;
         cursor: pointer;
     }
-
-    .photoSectionOne{
-        display: flex;
-        width: 100%;
-        
-        height: auto;
-        justify-content: center;
-        align-items: center;
-    }
-    .r1c1{
-        display: flex;
-        width: 100%;       
-        height: auto;
-        
-    }
-
-    .r2c1{
-        display: flex;
-        width: 100%;       
-        height: auto;
-       
-
-    }
-    .r3c1{
-        display: none;
-    }
-    #rowOneColumnOne, #rowTwoColumnOne, #rowThreeColumnOne{
-       width: 95%;
-       height: auto;
-       margin-left: auto;
-       margin-right: auto;
-       padding: 8px;
-        
-    }
-     #rowFourColumnOne{
-        display: none;
-    }
-   
-}
+    /*-----------------------------starting photo display-------------------*/
+    
+    
 
 /*--------------------------------------------max-width 550px---------------------------------------*/
 @media screen and (max-width: 550px) {
 
     body{
-        background-color: blueviolet;
+        background-color: yellow;       
+        
     }
+   
+   
 
-    .photoSectionOne{      
-       width: 100%;
-       height: auto;
-       background-color: rgb(202, 159, 39);      
-           
-    }      
+.footer{
+    z-index: 1;
+    position: relative;
+    background-color: rgb(29, 9, 116);
+    width: 100%;
+    border: solid 3px black;   
+ }
 
-    #rowOneColumnOne {
-       width: 45%;
-       height: auto;
-       background-color: orange;
-       position: relative;      
-    } 
-
-    #rowTwoColumnOne{       
-       width: 45%;
-       height: auto;
-       background-color: palegreen;
-    }
-
-    #rowThreeColumnOne, #rowFourColumnOne{
-        display: none;
-    }
-       
 }
 
 /*-----------------------------------------------max-width 500px--------------------------------------*/
 @media screen and (max-width: 548px) {
-
+   body{
+    background-color: burlywood;
    
-    #rowTwoColumnOne, #rowThreeColumnOne, #rowFourColumnOne{
-    display: none;
    }
    .photoSectionOne{
-    background-color: red;
-    display: block;
-   }
-   .r1c1{
-    background-color:magenta;
-   }
-   #rowOneColumnOne{
-    width: 95%;
-   }
-
-   
-   #searchIconOne{
-    font-size: 10px;
-   }
-
-   .footer{
+    display: flex;
     
+   }
+   .photoSectionOne > div{
+      width: 100%;
+      height: auto;
+   }
+   #picTwo, #picThree, #picFour{
+    display: none;
+   }
+   .divOne{
+    display: flex;
+    justify-content: center;
+
+   }
+   .divTwo, .divThree, .divFour{
+    display: none;
+   }
+   #picOne{
     width: 100%;
-    height: 100px;
+    height: auto;
+   }
+  
+
+   .footer{    
+    width: 100%;
+    height: 50px;
     border: 3px solid black;
-    background-color: chartreuse;
-    margin-top: 50px;
-   }    
+    background-color: chartreuse;   
+    z-index: 1;
+    position: relative;
+    bottom: -80px;
+   }   
+
+ }
+
 }
-
-
-
